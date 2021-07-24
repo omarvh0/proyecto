@@ -1,0 +1,142 @@
+body {
+    animation: BGcolorchanging 10s linear infinite alternate both;
+     
+}
+.hex {
+    
+    
+    width:150px;
+    height:86px;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;                   
+    background-size: auto 173px;                                                    
+    position: relative;
+    float:left;
+    margin:35px 5px;
+    text-align:center;
+    zoom:1;
+}
+            
+    .hex.hex-gap {
+            margin-left: 86px;
+    }
+    
+    .hex a {
+            display:block;
+            width: 100%;
+            height:100%;
+            text-indent:none;
+            position:absolute;
+            top:0;
+            left:0;
+    }
+
+    .hex .corner-1,
+    .hex .corner-2 {
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background: inherit;                                                            
+            z-index:-2;                                             
+            overflow:hidden;                
+            backface-visibility: hidden;                    
+    }
+    
+    .hex .corner-1 {
+            z-index:-1;
+            transform: rotate(60deg);
+    }
+    
+    .hex .corner-2 {
+            transform: rotate(-60deg);
+    }
+    
+    .hex .corner-1:before,
+    .hex .corner-2:before {
+            width: 173px;
+            height: 173px;
+      content: '';
+      position: absolute;
+      background: inherit;
+      top:0;
+      left: 0;
+      z-index: 1;
+      background: inherit;
+      background-repeat:no-repeat;
+            backface-visibility: hidden;                              
+    }                       
+    
+
+    .hex .corner-1:before {
+            transform: rotate(-60deg) translate(-87px, 0px);        
+      transform-origin: 0 0;
+    }                       
+    
+    .hex .corner-2:before {
+            transform: rotate(60deg) translate(-48px, -11px);       
+            bottom:0;
+    }               
+
+
+    
+    /* Custom styles*/
+  .hex
+    .hex .inner {           
+            color:#eee;
+    }
+    
+    .hex h4 {
+            font-family: 'Josefin Sans', sans-serif;                
+            margin:0;                       
+    }
+    
+    .hex hr {
+            border:0;
+            border-top:1px solid #eee;
+            width:60%;
+            margin:15px auto;
+    }
+    
+    .hex p {
+            font-size:16px;
+            font-family: 'Kotta One', serif;
+            width:80%;
+            margin: 30px auto;
+    }
+
+    .hex.hex-1 {
+            background: #74cddb;
+    }
+    
+    .hex.hex-2 {
+            background: #f5c53c;
+    }
+    
+    .hex.hex-3 {
+            background: #d3e0d0;
+    }
+    #cursosaelegir::-webkit-scrollbar{background:rgba(26, 25, 25, 0.226);border-radius: 5px;}
+    #cursosaelegir{width:72%;height:18em;overflow-x: auto;margin: auto; display:flex; }
+    #imgbackground{font-size: 0.4em;position:absolute;right: 6.5em;margin-top: 1.4em;color:rgb(8, 157, 216);}
+ #titulo1{text-align: center;font-size: 3em;margin-top:1.6em;}  #titulo2{text-align: center;font-size: 2em;margin-top:0.3em;}
+    #hex1{margin-left:6em;margin-top: 4em;float: left;flex-shrink: 0;} #hex2,#hex3{margin-left:4em;margin-top: 7.5em;float: left;flex-shrink: 0;}  #hex4{margin-left: 4em;margin-top: 4em;float: left;flex-shrink: 0;}   #hex1:hover,#hex2:hover,#hex4:hover,#hex3:hover{background:rgba(149, 223, 236, 0.863)}
+    #image{position:absolute;height:2em;width:2em ;right: 2.5em;top: 1em;border:5px solid rgb(8, 157, 216);border-radius: 35%;}
+@keyframes BGcolorchanging {
+     0%{
+         background-color: purple;
+     }   
+
+     50%{
+        background: violet
+     }
+
+     100% {
+         background:rebeccapurple
+     }
+
+
+}
+
